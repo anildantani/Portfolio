@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Anil Dantani, a web and mobile developer."
+    />
+    <meta
+      name="keywords"
+      content="portfolio, web development, mobile development, Anil Dantani"
+    />
+    <meta name="author" content="Anil Dantani" />
+    <title>Anil Dantani - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom Tailwind CSS configurations */
+      .hero-animation {
+        animation: fadeIn 3s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .fade-in {
+        animation: fadeIn 1s ease-in;
+      }
+      @media (max-width: 375px) {
+        .project-card {
+          padding: 1rem;
+        }
+        .text-2xl {
+          font-size: 1.5rem;
+        }
+        .text-3xl {
+          font-size: 1.875rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-sky-100 text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-sky-600 text-white shadow-md">
+      <nav
+        class="flex flex-col md:flex-row justify-between items-center py-4 px-6 md:px-8"
+      >
+        <a href="#" class="text-lg font-bold">Anil Dantani</a>
+        <div class="space-y-4 md:space-y-0 md:space-x-4 text-sm md:text-base">
+          <a href="#home" class="hover:text-sky-300">Home</a>
+          <a href="#about" class="hover:text-sky-300">About</a>
+          <a href="#portfolio" class="hover:text-sky-300">Portfolio</a>
+          <a href="#skills" class="hover:text-sky-300">Skills</a>
+          <a href="#contact" class="hover:text-sky-300">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="text-center py-16 bg-gradient-to-r from-sky-200 via-sky-300 to-sky-400 hero-animation"
+      id="home"
+    >
+      <div class="container mx-auto px-4">
+        <h1 class="text-2xl md:text-4xl font-bold mb-4 text-white">
+          Welcome to My Portfolio
+        </h1>
+        <p class="text-sm md:text-lg mb-8 text-white">
+          I am Anil Dantani, a passionate developer with experience in web and
+          mobile development.
+        </p>
+        <a
+          href="#contact"
+          class="bg-sky-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-sky-600 transition duration-300 ease-in-out"
+          >Get in Touch</a
+        >
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      class="py-16 bg-gradient-to-r from-sky-100 via-sky-200 to-sky-300 fade-in"
+      id="about"
+    >
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-xl md:text-3xl font-bold mb-6 text-center text-gray-800"
+        >
+          About Me
+        </h2>
+        <p
+          class="text-sm md:text-base leading-relaxed text-center text-gray-800"
+        >
+          I have recently completed my post graduation Diploma in Mobile
+          Application development from Fanshawe College London Ontario Canada. I
+          am passionate about building scalable and accessible applications and
+          constantly improving my skills.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-16 bg-sky-100 fade-in" id="portfolio">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-xl md:text-3xl font-bold mb-6 text-center text-gray-800"
+        >
+          My Work
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 with Embedded Video -->
+          <div
+            class="project-card bg-white p-4 rounded-lg shadow-lg border border-sky-200 bg-gradient-to-r from-sky-50 via-sky-100 to-sky-200 transition-transform transform hover:scale-105 hover:shadow-xl"
+          >
+            <h3 class="text-lg font-semibold mb-2 text-gray-800">
+              Project One
+            </h3>
+            <div class="mb-4">
+              <video class="w-full h-48 md:h-64 rounded-lg shadow-md" controls>
+                <source src="path/to/your/video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p class="text-sm md:text-base text-gray-600 mb-4">
+              A brief description of the project. What technologies were used,
+              what problems were solved, etc.
+            </p>
+            <a href="#" class="text-sky-500 hover:underline">View Details</a>
+          </div>
+
+          <!-- Project 2 with Local Video -->
+          <div
+            class="project-card bg-white p-4 rounded-lg shadow-lg border border-sky-200 bg-gradient-to-r from-sky-50 via-sky-100 to-sky-200 transition-transform transform hover:scale-105 hover:shadow-xl"
+          >
+            <h3 class="text-lg font-semibold mb-2 text-gray-800">
+              Project Two
+            </h3>
+            <div class="mb-4">
+              <video class="w-full h-48 md:h-64 rounded-lg shadow-md" controls>
+                <source src="path/to/your/video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p class="text-sm md:text-base text-gray-600 mb-4">
+              A brief description of the project. What technologies were used,
+              what problems were solved, etc.
+            </p>
+            <a href="#" class="text-sky-500 hover:underline">View Details</a>
+          </div>
+
+          <!-- Add more projects as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section
+      class="py-16 bg-gradient-to-r from-sky-100 via-sky-200 to-sky-300 fade-in"
+      id="skills"
+    >
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-xl md:text-3xl font-bold mb-6 text-center text-gray-800"
+        >
+          My Skills
+        </h2>
+        <div class="flex flex-wrap justify-center gap-8">
+          <!-- Skill Item -->
+          <div
+            class="flex items-center bg-white p-4 rounded-lg shadow-lg border border-sky-200 bg-gradient-to-r from-sky-50 via-sky-100 to-sky-200 transition-transform transform hover:scale-105 hover:shadow-xl"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/python.svg"
+              alt="Python Logo"
+              class="w-12 h-12 mr-4"
+            />
+            <span class="text-lg font-semibold text-gray-800">Python</span>
+          </div>
+
+          <!-- Skill Item -->
+          <div
+            class="flex items-center bg-white p-4 rounded-lg shadow-lg border border-sky-200 bg-gradient-to-r from-sky-50 via-sky-100 to-sky-200 transition-transform transform hover:scale-105 hover:shadow-xl"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/javascript.svg"
+              alt="JavaScript Logo"
+              class="w-12 h-12 mr-4"
+            />
+            <span class="text-lg font-semibold text-gray-800">JavaScript</span>
+          </div>
+
+          <!-- Skill Item -->
+          <div
+            class="flex items-center bg-white p-4 rounded-lg shadow-lg border border-sky-200 bg-gradient-to-r from-sky-50 via-sky-100 to-sky-200 transition-transform transform hover:scale-105 hover:shadow-xl"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/html5.svg"
+              alt="HTML Logo"
+              class="w-12 h-12 mr-4"
+            />
+            <span class="text-lg font-semibold text-gray-800">HTML</span>
+          </div>
+
+          <!-- Skill Item -->
+          <div
+            class="flex items-center bg-white p-4 rounded-lg shadow-lg border border-sky-200 bg-gradient-to-r from-sky-50 via-sky-100 to-sky-200 transition-transform transform hover:scale-105 hover:shadow-xl"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/css3.svg"
+              alt="CSS Logo"
+              class="w-12 h-12 mr-4"
+            />
+            <span class="text-lg font-semibold text-gray-800">CSS</span>
+          </div>
+
+          <!-- Add more skills as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 fade-in" id="contact">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-xl md:text-3xl font-bold mb-6 text-center text-gray-800"
+        >
+          Contact Me
+        </h2>
+        <div class="flex flex-col items-center">
+          <p class="text-sm md:text-base mb-4 text-gray-800">
+            Feel free to reach out to me through any of the following methods:
+          </p>
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg border border-sky-200 bg-gradient-to-r from-sky-50 via-sky-100 to-sky-200 w-full max-w-lg"
+          >
+            <ul class="list-none">
+              <li class="flex items-center mb-4">
+                <svg
+                  class="w-6 h-6 text-sky-500 mr-3"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M1 3v18h22V3H1zm20 16H3V5h18v14zm-6-7l-5 5V7l5 5z" />
+                </svg>
+                <a
+                  href="mailto:vaishalidantani@example.com"
+                  class="text-sky-600 hover:underline"
+                  >anildantani1999@gmail.com</a
+                >
+              </li>
+              <li class="flex items-center mb-4">
+                <svg
+                  class="w-6 h-6 text-sky-500 mr-3"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22.4c-5.735 0-10.4-4.665-10.4-10.4S6.265 1.6 12 1.6 22.4 6.265 22.4 12 17.735 22.4 12 22.4z"
+                  />
+                </svg>
+                <a href="tel:+14375597728" class="text-sky-600 hover:underline"
+                  >+1(437)-559-7728</a
+                >
+              </li>
+              <li class="flex items-center mb-4">
+                <svg
+                  class="w-6 h-6 text-sky-500 mr-3"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M4 2C3.447 2 3 2.447 3 3v18c0 .553.447 1 1 1h16c.553 0 1-.447 1-1V3c0-.553-.447-1-1-1H4zm0 2h16v14H4V4zm6 6h4v2h-4v-2zm0 4h4v2h-4v-2z"
+                  />
+                </svg>
+                <a
+                  href="https://www.linkedin.com/in/anil-dantani-291127104/"
+                  class="text-sky-600 hover:underline"
+                  >LinkedIn-AnilDantani</a
+                >
+              </li>
+              <!-- Add more contact methods if needed -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-sky-600 text-white py-4 text-center">
+      <p>&copy; 2024 Anil Dantani. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
