@@ -1,0 +1,12 @@
+#backToTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  #backToTop.hidden {
+    display: none;
+  }
+  
